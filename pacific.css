@@ -1,5 +1,8 @@
 body {
-    background-color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #90C7E3;
+    background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
+    background-repeat: no-repeat;
     color: #666666;
 }
 
@@ -9,14 +12,23 @@ body {
 }
 
 header {
+    line-height: 60px;
+    text-align: center;
+    padding-top: 15px;
     color: #FFFFFF;
 }
 
 nav {
-    background-color: #90C7E3;
+    text-align: center;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px;
 }
 
 h2 {
+    text-shadow: 1px 1px 1px #CCCCCC;
+    font-family: Georgia, "Times New Roman", serif;
     color: #3399CC;
 }
 
@@ -25,9 +37,74 @@ dt {
 }
 
 .resort {
+    font-weight: bold;
     color: #5C7FA3;
 }
 
 h1 {
+    font-family: Georgia, "Times New Roman", serif;
     margin-bottom: 0;
+    margin-top: 0;
+}
+
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+ul {
+    list-style-image: url(marker.gif);
+}
+
+footer {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+}
+
+contact {
+    font-size: 90%;
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: #FFFFFF;
+    min-width: 960px;
+    max-width: 2048px;
+    box-shadow: 3px 3px 3px #333333;
+}
+
+main {
+    padding-top: 1px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    display: block;
+}
+
+#homehero {
+    height: 300px;
+    background-image: url(coasthero.jpg);
+    background-origin: content-box;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#yurthero {
+    height: 300px;
+    background-image: url(yurthero.jpg);
+    background-origin: content-box;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#trailhero {
+    height: 300px;
+    background-image: url(trailhero.jpg);
+    background-origin: content-box;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
