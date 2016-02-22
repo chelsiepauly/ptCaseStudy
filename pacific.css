@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #90C7E3;
-    background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
+    background-color: #4F6D93;
+    background-image: linear-gradient(to bottom, #FFFFFF, #4F6D93);
     background-repeat: no-repeat;
     color: #666666;
 }
@@ -15,12 +15,31 @@ header {
     background-color: #000033;
 }
 
-nav {
-    text-align: center;
+nav ul {
     font-weight: bold;
-    background-color: #FFFFFF;
     text-decoration: none;
-    padding: 10px;
+    padding: 20px;
+    float: left;
+    width: 160px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding-left: 0px;
+    font-size: 1.2em;
+}
+
+a:link {
+    color: #000033;
+}
+
+a:visited {
+    color: #344873;
+}
+
+a:hover {
+    color: #FFFFFF;
 }
 
 h2 {
@@ -55,7 +74,7 @@ h3 {
     font-family: Georgia, "Times New Roman", serif;
 }
 
-ul {
+main ul {
     list-style-image: url(marker.gif);
 }
 
@@ -65,6 +84,8 @@ footer {
     font-style: italic;
     text-align: center;
     padding: 20px;
+    margin-left: 190px;
+    background-color: #FFFFFF;
 }
 
 contact {
@@ -75,7 +96,7 @@ contact {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    background-color: #FFFFFF;
+    background-color: #90C7E3;
     min-width: 960px;
     max-width: 2048px;
     box-shadow: 3px 3px 3px #333333;
@@ -85,8 +106,10 @@ main {
     padding-top: 1px;
     padding-right: 20px;
     padding-bottom: 20px;
-    padding-left: 20px;
+    padding-left: 30px;
     display: block;
+    background-color: #FFFFFF;
+    margin-left: 190px;
 }
 
 #homehero {
@@ -95,6 +118,7 @@ main {
     background-origin: content-box;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    margin-left: 190px;
 }
 
 #yurthero {
@@ -103,6 +127,7 @@ main {
     background-origin: content-box;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    margin-left: 190px;
 }
 
 #trailhero {
@@ -111,4 +136,5 @@ main {
     background-origin: content-box;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    margin-left: 190px;
 }
