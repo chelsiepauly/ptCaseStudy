@@ -1,3 +1,15 @@
+header,
+main,
+nav,
+footer,
+figure,
+figcaption,
+aside,
+section,
+article {
+    display: block;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #4F6D93;
@@ -44,6 +56,7 @@ a:hover {
 
 nav a {
     text-decoration: none;
+    transition: color 3s ease-out;
 }
 
 h2 {
@@ -91,9 +104,10 @@ footer {
     padding: 20px;
     margin-left: 190px;
     background-color: #FFFFFF;
+    float: none;
 }
 
-contact {
+#contact {
     font-size: 90%;
 }
 
@@ -168,16 +182,87 @@ tr:nth-of-type(odd) {
     background-color: #F5FAFC;
 }
 
-header,
-main,
-nav,
-footer,
-figure,
-figcaption,
-aside,
-section,
-article {
+label {
+    float: left;
     display: block;
+    text-align: right;
+    width: 120px;
+    padding-right: 20px;
+}
+
+input {
+    display: block;
+    margin-bottom: 20px;
+}
+
+textarea {
+    display: block;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    margin-left: 130px;
+    display: block;
+}
+
+#gallery {
+    position: relative;
+    height: 200px;
+    text-align: left;
+    color: darkslategrey;
+}
+
+#gallery body {
+    background-color: #FFFFFF;
+}
+
+#gallery ul {
+    width: 300px;
+    list-style: none;
+}
+
+#gallery li {
+    display: inline;
+    float: left;
+    padding: 10px;
+}
+
+#gallery img {
+    border: none;
+}
+
+#gallery a:link {
+    text-decoration: none;
+    color: #000000;
+    font-style: italic;
+}
+
+#gallery span {
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+#gallery a:hover span {
+    position: absolute;
+    top: 16px;
+    left: 320px;
+    text-align: center;
+    opacity: 1;
+}
+
+figure {
+    position: absolute;
+    left: 280px;
+    text-align: center;
+    opacity: .25;
+}
+
+video,
+embed {
+    float: right;
+    padding-left: 20px;
 }
 
 #mobile {
@@ -223,6 +308,25 @@ article {
     footer {
         margin-left: 0;
     }
+    label {
+        float: left;
+        display: block;
+        text-align: right;
+        width: 120px;
+        padding-right: 20px;
+    }
+    input {
+        display: block;
+        margin-bottom: 20px;
+    }
+    textarea {
+        display: block;
+        margin-bottom: 20px;
+    }
+    input[type="submit"] {
+        margin-left: 130px;
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -260,6 +364,20 @@ article {
         display: inline;
     }
     #desktop {
+        display: none;
+    }
+    label {
+        float: none;
+        text-align: left;
+    }
+    input[type="submit"] {
+        margin-left: 0;
+    }
+    textarea {
+        display: block;
+        margin-bottom: 20px;
+    }
+    #gallery {
         display: none;
     }
 }
